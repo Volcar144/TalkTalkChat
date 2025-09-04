@@ -71,7 +71,7 @@ export function UserStatusIndicator({
         {
           event: "UPDATE",
           schema: "public",
-          table: "user_profiles",
+          table: "profiles",
           filter: `id=eq.${userId}`,
         },
         (payload) => {

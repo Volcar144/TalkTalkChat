@@ -27,3 +27,7 @@ export async function createClient() {
     }
   )
 }
+
+export function createServerClient() {
+  return createClient()
+}

@@ -5,7 +5,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Badge } from "@/components/ui/badge"
 import { UserStatusIndicator } from "./user-status-indicator"
 import { UserProfileDialog } from "@/components/profile/user-profile-dialog"
-import { createBrowserClient } from "@/lib/supabase/client"
+import { createClient as createBrowserClient} from "@/lib/supabase/client"
 
 interface MemberListProps {
   serverId: string

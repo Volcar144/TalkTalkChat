@@ -20,7 +20,7 @@ import {
   Settings,
   Users,
 } from "lucide-react"
-import { createBrowserClient } from "@/lib/supabase/client"
+import { createClient as createBrowserClient } from "@/lib/supabase/client"
 import { useUser } from "@stackframe/stack"
 
 interface VoiceChannelProps {

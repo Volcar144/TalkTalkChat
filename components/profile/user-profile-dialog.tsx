@@ -14,7 +14,7 @@ import { Switch } from "@/components/ui/switch"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Camera, Palette, User, Shield } from "lucide-react"
-import { createBrowserClient } from "@/lib/supabase/client"
+import { createClient as createBrowserClient } from "@/lib/supabase/client"
 import { useUser } from "@stackframe/stack"
 
 interface UserProfileDialogProps {

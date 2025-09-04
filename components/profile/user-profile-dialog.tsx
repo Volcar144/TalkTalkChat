@@ -140,7 +140,7 @@ export function UserProfileDialog({ open, onOpenChange, userId }: UserProfileDia
 
     setSaving(true)
     try {
-      const { error } = await supabase.from("user_profiles").upsert(profile)
+      const { error } = await supabase.from("profiles").upsert(profile)
 
       if (error) {
         console.error("Error saving profile:", error)

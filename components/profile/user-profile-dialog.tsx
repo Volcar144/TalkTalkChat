@@ -96,7 +96,7 @@ export function UserProfileDialog({ open, onOpenChange, userId }: UserProfileDia
     setLoading(true)
     try {
       const targetUserId = userId || user.id
-      const { data, error } = await supabase.from("user_profiles").select("*").eq("id", targetUserId).single()
+      const { data, error } = await supabase.from("profiles").select("*").eq("id", targetUserId).single()
 
       if (error && error.code !== "PGRST116") {
         console.error("Error fetching profile:", error)

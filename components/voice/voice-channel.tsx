@@ -79,7 +79,7 @@ export function VoiceChannel({ channelId, channelName, serverId }: VoiceChannelP
         .from("voice_sessions")
         .select(`
           *,
-          user_profiles!inner(username, display_name, avatar_url)
+          profiles!inner(username, display_name, avatar_url)
         `)
         .eq("channel_id", channelId)
 
